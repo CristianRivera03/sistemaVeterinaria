@@ -67,20 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="pages\dueno.aspx" />
     <Content Include="pages\inicio.aspx" />
     <Content Include="pages\loginForm.aspx" />
+    <Content Include="pages\registrarAnimal.aspx" />
+    <Content Include="pages\registrarDueno.aspx" />
+    <Content Include="pages\resources\cat.jpg" />
+    <Content Include="pages\resources\dogs.jpg" />
+    <Content Include="pages\resources\meowl.jpg" />
+    <Content Include="pages\resources\paluma.jpg" />
+    <Content Include="pages\resources\pet.jpg" />
     <Content Include="pages\resources\rataGod.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="pages\dueno.aspx.cs">
-      <DependentUpon>dueno.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="pages\dueno.aspx.designer.cs">
-      <DependentUpon>dueno.aspx</DependentUpon>
-    </Compile>
     <Compile Include="pages\inicio.aspx.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,6 +93,20 @@
     </Compile>
     <Compile Include="pages\loginForm.aspx.designer.cs">
       <DependentUpon>loginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\registrarAnimal.aspx.cs">
+      <DependentUpon>registrarAnimal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\registrarAnimal.aspx.designer.cs">
+      <DependentUpon>registrarAnimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\registrarDueno.aspx.cs">
+      <DependentUpon>registrarDueno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\registrarDueno.aspx.designer.cs">
+      <DependentUpon>registrarDueno.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

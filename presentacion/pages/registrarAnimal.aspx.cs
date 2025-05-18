@@ -7,11 +7,20 @@ using System.Web.UI.WebControls;
 
 namespace presentacion.pages
 {
-    public partial class dueno : System.Web.UI.Page
+    public partial class registrarAnimal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
+
+
         }
+
+        protected void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("inicio.aspx");
+        }
+
     }
 }

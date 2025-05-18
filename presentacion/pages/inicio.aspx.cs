@@ -13,5 +13,15 @@ namespace presentacion.pages
         {
 
         }
+
+        protected void btnAnimal_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("registrarAnimal.aspx");
+        }
+
+        protected void btnDueno_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("registrarDueno.aspx");
+        }
     }
 }
