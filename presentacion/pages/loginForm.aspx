@@ -54,7 +54,7 @@
         <div class="login-container text-center">
             <h2 class="fw-bold">Bienvenido!!</h2>
             <p class="small-link">
-                Inicia Sesión o <a href="#" class="text-primary text-decoration-none">Crea una nueva Cuenta</a>
+                Inicia Sesión
             </p>
 
             <div class="text-start mt-4 mb-3">

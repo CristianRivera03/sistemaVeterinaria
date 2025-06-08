@@ -6,6 +6,11 @@
     <title>Registrar Consulta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body {
             padding: 40px;
@@ -166,6 +171,30 @@
                 <img src="resources/cat.jpg" alt="Mascota" class="imagen-perro" />
             </div>
         </div>
+
+
+        <!-- Hidden field para pasar el Id recién creado -->
+    <asp:HiddenField ID="hfConsultaId" runat="server" />
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4 rounded">
+          <div class="modal-body text-center">
+            <h5>¿Desea generar el recibo?</h5>
+          </div>
+          <div class="modal-footer justify-content-center border-0">
+            <asp:Button ID="btnGeneratePdf" runat="server"
+              CssClass="btn" Style="background-color:#28a745;color:white;"
+              Text="Sí" OnClick="btnGeneratePdf_Click" />
+            <asp:Button ID="btnBackInicio" runat="server"
+              CssClass="btn btn-primary" Text="Volver a Inicio"
+              OnClick="btnBackInicio_Click" />
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     </form>
 </body>

@@ -2,6 +2,7 @@
 using datos;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,5 +17,12 @@ namespace negocio
         {
             return _repo.Insertar(c);
         }
+
+        public DataTable ObtenerConsultasPorFecha(DateTime desde, DateTime hasta)
+        {
+            return new ConsultaRepository().ObtenerPorFecha(desde, hasta);
+        }
+
+        public consulta ObtenerConsultaPorId(int id) => _repo.ObtenerPorId(id);
     }
 }

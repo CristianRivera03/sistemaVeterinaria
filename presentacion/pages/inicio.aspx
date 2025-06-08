@@ -87,7 +87,7 @@
                 <asp:Button ID="btnAnimal" runat="server" Text="Registrar Animal" CssClass="btn btn-menu" OnClick="btnAnimal_Click" />
                 <asp:Button ID="btnConsulta" runat="server" Text="Registrar Consulta" CssClass="btn btn-menu" OnClick="btnConsulta_Click" />
                 <asp:Button ID="btnBuscar" runat="server" Text="Buscar Consultas" CssClass="btn btn-menu" />
-                <asp:Button ID="btnReportes" runat="server" Text="Ver Reportes" CssClass="btn btn-menu" />
+                <asp:Button ID="btnReportes" runat="server" Text="Ver Reportes" CssClass="btn btn-menu" OnClick="btnReportes_Click" />
             </div>
 
             <div>

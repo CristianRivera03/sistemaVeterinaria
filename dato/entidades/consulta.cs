@@ -17,6 +17,8 @@ namespace dato.entidades
         public string Diagnostico { get; set; }
         public string Tratamiento { get; set; }
         public string Veterinario { get; set; }
+        public string NombreDueno { get; set; }
+        public string NombreMascota { get; set; }
 
     }
 }

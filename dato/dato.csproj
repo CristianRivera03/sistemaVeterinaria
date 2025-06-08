@@ -45,6 +45,7 @@
     <Compile Include="datoConsulta.cs" />
     <Compile Include="datoDueno.cs" />
     <Compile Include="datoMascota.cs" />
+    <Compile Include="datoReporte.cs" />
     <Compile Include="datoUsuario.cs" />
     <Compile Include="entidades\consulta.cs" />
     <Compile Include="entidades\dueno.cs" />
