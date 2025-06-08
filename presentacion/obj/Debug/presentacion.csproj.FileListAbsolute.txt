@@ -12,3 +12,17 @@ C:\Users\cr853\source\repos\sistemaVeterinaria\presentacion\bin\dato.dll
 C:\Users\cr853\source\repos\sistemaVeterinaria\presentacion\bin\negocio.pdb
 C:\Users\cr853\source\repos\sistemaVeterinaria\presentacion\bin\System.Data.SqlClient.xml
 C:\Users\cr853\source\repos\sistemaVeterinaria\presentacion\bin\dato.pdb
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\bin\presentacion.dll.config
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\bin\presentacion.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\bin\presentacion.pdb
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\bin\dato.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\bin\negocio.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\bin\System.Data.SqlClient.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\bin\dato.pdb
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\bin\negocio.pdb
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\bin\System.Data.SqlClient.xml
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\obj\Debug\presentacion.csproj.AssemblyReference.cache
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\obj\Debug\presentacion.csproj.CoreCompileInputs.cache
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\obj\Debug\presenta.D2D8CCE5.Up2Date
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\obj\Debug\presentacion.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria-main\sistemaVeterinaria-main\presentacion\obj\Debug\presentacion.pdb

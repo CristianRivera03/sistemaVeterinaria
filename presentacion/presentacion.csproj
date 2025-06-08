@@ -67,6 +67,7 @@
     <Content Include="pages\inicio.aspx" />
     <Content Include="pages\loginForm.aspx" />
     <Content Include="pages\registrarAnimal.aspx" />
+    <Content Include="pages\registrarConsulta.aspx" />
     <Content Include="pages\registrarDueno.aspx" />
     <Content Include="pages\resources\cat.jpg" />
     <Content Include="pages\resources\dogs.jpg" />
@@ -97,6 +98,13 @@
     </Compile>
     <Compile Include="pages\registrarAnimal.aspx.designer.cs">
       <DependentUpon>registrarAnimal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\registrarConsulta.aspx.cs">
+      <DependentUpon>registrarConsulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\registrarConsulta.aspx.designer.cs">
+      <DependentUpon>registrarConsulta.aspx</DependentUpon>
     </Compile>
     <Compile Include="pages\registrarDueno.aspx.cs">
       <DependentUpon>registrarDueno.aspx</DependentUpon>

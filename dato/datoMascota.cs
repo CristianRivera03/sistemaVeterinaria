@@ -11,6 +11,28 @@ namespace datos
         private readonly string _conexionString =
             ConfigurationManager.ConnectionStrings["con"].ConnectionString;
 
+
+
+
+        public DataTable ObtenerTodos()
+        {
+            var dt = new DataTable();
+            const string sql = @"
+                SELECT IdMascota, Nombre
+                  FROM Mascotas
+                 ORDER BY Nombre;
+            ";
+
+            using (var con = new SqlConnection(_conexionString))
+            using (var cmd = new SqlCommand(sql, con))
+            using (var da = new SqlDataAdapter(cmd))
+            {
+                da.Fill(dt);
+            }
+
+            return dt;
+        }
+
         public int Insertar(Mascota m)
         {
             const string sql = @"

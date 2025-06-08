@@ -42,9 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="datoConsulta.cs" />
     <Compile Include="datoDueno.cs" />
     <Compile Include="datoMascota.cs" />
     <Compile Include="datoUsuario.cs" />
+    <Compile Include="entidades\consulta.cs" />
     <Compile Include="entidades\dueno.cs" />
     <Compile Include="entidades\mascota.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
