@@ -102,7 +102,7 @@
         <div class="form-container">
             <div class="form-box">
                 <div class="mb-3">
-                    <label for="txtNombre" class="form-label">Nombre</label>
+                     <label for="txtNombre" class="form-label">Nombre</label>
                     <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" />
                 </div>
                 <div class="mb-3">
@@ -110,10 +110,19 @@
                     <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control" />
                 </div>
                 <div class="mb-3">
-                    <label for="txtDireccion" class="form-label">Dirección</label>
-                    <asp:TextBox ID="txtDireccion" runat="server" CssClass="form-control" TextMode="MultiLine" Rows="3" />
+                    <label for="txtEmail" class="form-label">Email</label>
+                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" />
                 </div>
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar Dueño" CssClass="btn btn-guardar" />
+                <div class="mb-3">
+                    <label for="txtDireccion" class="form-label">Dirección</label>
+                    <asp:TextBox ID="txtDireccion" runat="server"
+                                 CssClass="form-control" TextMode="MultiLine" Rows="3" />
+                </div>
+
+                <asp:Label ID="lblMsg" runat="server" CssClass="text-danger mb-3" />
+
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar Dueño"
+                    CssClass="btn btn-guardar" OnClick="btnGuardar_Click" />
             </div>
             <div>
                 <img src="resources/pet.jpg" alt="Perrito" class="imagen-perro" />

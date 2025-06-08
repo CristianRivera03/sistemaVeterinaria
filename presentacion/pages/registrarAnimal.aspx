@@ -99,27 +99,58 @@
         <asp:Button ID="btnRegresar" runat="server" Text="← Menú Principal" CssClass="btn-regresar" OnClick="btnRegresar_Click" />
 
 
-        <div class="titulo">Registrar Animal</div>
-        <div class="form-container">
-            <div class="form-box">
-                <div class="mb-3">
-                    <label for="ddlDueno" class="form-label">Seleccionar Dueño</label>
-                    <asp:DropDownList ID="ddlDueno" runat="server" CssClass="form-select" />
-                </div>
-                <div class="mb-3">
-                    <label for="txtNombre" class="form-label">Nombre de la Mascota</label>
-                    <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" />
-                </div>
-                <div class="mb-3">
-                    <label for="txtEdad" class="form-label">Edad (Ej: 2 años 3 meses)</label>
-                    <asp:TextBox ID="txtEdad" runat="server" CssClass="form-control" />
-                </div>
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar Animal" CssClass="btn btn-guardar" />
-            </div>
-            <div>
-                <img src="resources/cat.jpg" alt="Perrito" class="imagen-perro" />
-            </div>
+    <h2 class="titulo">Registrar Animal</h2>
+    <div class="form-container">
+      <div class="form-box">
+        <!-- 1) Selector de dueño -->
+        <div class="mb-3">
+          <label for="ddlDueno" class="form-label">Dueño</label>
+          <asp:DropDownList ID="ddlDueno" runat="server"
+              CssClass="form-select" />
         </div>
-    </form>
+        <!-- 2) Nombre mascota -->
+        <div class="mb-3">
+          <label for="txtNombre" class="form-label">
+            Nombre de la mascota
+          </label>
+          <asp:TextBox ID="txtNombre" runat="server"
+              CssClass="form-control" />
+        </div>
+        <!-- 3) Especie -->
+        <div class="mb-3">
+          <label for="txtEspecie" class="form-label">Especie</label>
+          <asp:TextBox ID="txtEspecie" runat="server"
+              CssClass="form-control" />
+        </div>
+        <!-- 4) Raza -->
+        <div class="mb-3">
+          <label for="txtRaza" class="form-label">Raza</label>
+          <asp:TextBox ID="txtRaza" runat="server"
+              CssClass="form-control" />
+        </div>
+        <!-- 5) Fecha de nacimiento -->
+        <div class="mb-3">
+          <label for="txtFechaNacimiento" class="form-label">
+            Fecha de nacimiento
+          </label>
+          <asp:TextBox ID="txtFechaNacimiento" runat="server"
+              CssClass="form-control"
+              TextMode="Date" />
+        </div>
+
+        <asp:Label ID="lblMsg" runat="server"
+                   CssClass="text-danger mb-3" />
+
+        <asp:Button ID="btnGuardar" runat="server"
+            Text="Guardar Animal"
+            CssClass="btn btn-guardar"
+            OnClick="btnGuardar_Click" />
+      </div>
+
+      <div>
+        <img src="resources/cat.jpg" alt="Cat" class="imagen-perro" />
+      </div>
+    </div>
+  </form>
 </body>
 </html>
