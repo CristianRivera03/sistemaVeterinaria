@@ -4,3 +4,9 @@ C:\Users\cr853\source\repos\sistemaVeterinaria\dato\obj\Debug\dato.csproj.Assemb
 C:\Users\cr853\source\repos\sistemaVeterinaria\dato\obj\Debug\dato.csproj.CoreCompileInputs.cache
 C:\Users\cr853\source\repos\sistemaVeterinaria\dato\obj\Debug\dato.dll
 C:\Users\cr853\source\repos\sistemaVeterinaria\dato\obj\Debug\dato.pdb
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\dato\bin\Debug\dato.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\dato\bin\Debug\dato.pdb
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\dato\obj\Debug\dato.csproj.AssemblyReference.cache
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\dato\obj\Debug\dato.csproj.CoreCompileInputs.cache
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\dato\obj\Debug\dato.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\dato\obj\Debug\dato.pdb

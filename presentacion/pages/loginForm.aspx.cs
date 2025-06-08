@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using negocio;
 
 namespace presentacion.pages
@@ -12,7 +7,7 @@ namespace presentacion.pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblMensaje.Text = ""; // Limpia mensajes previos al cargar la página
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -20,10 +15,17 @@ namespace presentacion.pages
             string usuario = txtUsuario.Text.Trim();
             string contraseña = txtContrasenia.Text.Trim();
 
-            // 1) instanciamos la clase de negocio
+            // Validación: Usuario y contraseña no pueden estar vacíos
+            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(contraseña))
+            {
+                lblMensaje.Text = "Debe ingresar usuario y contraseña.";
+                return;
+            }
+
+            // Instanciar la clase de negocio
             var negocio = new negocioUsuario();
 
-            // 2) llamamos al método de instancia
+            // Verificar credenciales
             int idUsuario = negocio.iniciarSesion(usuario, contraseña);
 
             if (idUsuario > 0)
@@ -33,9 +35,8 @@ namespace presentacion.pages
             }
             else
             {
-                //lblMsg.Text = "Usuario o contraseña incorrectos.";
+                lblMensaje.Text = "Usuario o contraseña incorrectos. Intente nuevamente.";
             }
         }
-
     }
 }

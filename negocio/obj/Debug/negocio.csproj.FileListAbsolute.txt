@@ -9,3 +9,14 @@ C:\Users\cr853\source\repos\sistemaVeterinaria\negocio\obj\Debug\negocio.csproj.
 C:\Users\cr853\source\repos\sistemaVeterinaria\negocio\obj\Debug\negocio.csproj.Up2Date
 C:\Users\cr853\source\repos\sistemaVeterinaria\negocio\obj\Debug\negocio.dll
 C:\Users\cr853\source\repos\sistemaVeterinaria\negocio\obj\Debug\negocio.pdb
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\bin\Debug\negocio.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\bin\Debug\negocio.pdb
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\bin\Debug\dato.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\bin\Debug\dato.pdb
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\obj\Debug\negocio.csproj.Up2Date
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\obj\Debug\negocio.dll
+C:\Users\JOSE EDUARDO\Downloads\sistemaVeterinaria\negocio\obj\Debug\negocio.pdb
