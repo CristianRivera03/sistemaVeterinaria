@@ -23,5 +23,10 @@ namespace presentacion.pages
         {
             Response.Redirect("registrarDueno.aspx");
         }
+
+        protected void btnConsulta_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("registrarConsulta.aspx");
+        }
     }
 }
