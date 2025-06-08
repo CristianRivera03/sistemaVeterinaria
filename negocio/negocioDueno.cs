@@ -21,7 +21,10 @@ namespace negocio
 
 
 
-        public DataTable ObtenerDuenos() => _repo.ObtenerTodos();
+        public DataTable ObtenerDuenos()
+        {
+            return _repo.ObtenerTodos();
+        }
 
 
     }

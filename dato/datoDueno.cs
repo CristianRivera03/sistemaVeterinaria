@@ -17,13 +17,15 @@ namespace datos
         public DataTable ObtenerTodos()
         {
             var dt = new DataTable();
-             var con = new SqlConnection(conexionString);
-             var da = new SqlDataAdapter(
-              "SELECT IdDueno, Nombre FROM Duenos ORDER BY Nombre", con);
-            da.Fill(dt);
+            const string sql = "SELECT IdDueno, Nombre FROM Duenos ORDER BY Nombre";
+            using (var con = new SqlConnection(conexionString))
+            using (var cmd = new SqlCommand(sql, con))
+            using (var da = new SqlDataAdapter(cmd))
+            {
+                da.Fill(dt);
+            }
             return dt;
         }
-
 
 
         public int Insertar(Dueno dueno)
