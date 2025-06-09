@@ -32,16 +32,15 @@ namespace datos
 
             return dt;
         }
-
         public int Insertar(Mascota m)
         {
             const string sql = @"
-                INSERT INTO Mascotas
-                  (IdDueno, Nombre, Especie, Raza, FechaNacimiento)
-                VALUES
-                  (@IdDueno, @Nombre, @Especie, @Raza, @FechaNacimiento);
-                SELECT SCOPE_IDENTITY();
-            ";
+        INSERT INTO Mascotas
+          (IdDueno, Nombre, Especie, Raza, FechaNacimiento)
+        VALUES
+          (@IdDueno, @Nombre, @Especie, @Raza, @FechaNacimiento);
+        SELECT SCOPE_IDENTITY();
+    ";
 
              var con = new SqlConnection(_conexionString);
              var cmd = new SqlCommand(sql, con);
@@ -50,10 +49,12 @@ namespace datos
             cmd.Parameters.AddWithValue("@Nombre", m.Nombre);
             cmd.Parameters.AddWithValue("@Especie", (object)m.Especie ?? DBNull.Value);
             cmd.Parameters.AddWithValue("@Raza", (object)m.Raza ?? DBNull.Value);
-            cmd.Parameters.AddWithValue("@FechaNacimiento", m.FechaNacimiento);
+            // Si es null, pasa DBNull.Value; si no, el DateTime
+            cmd.Parameters.AddWithValue("@FechaNacimiento", (object)m.FechaNacimiento ?? DBNull.Value);
 
             con.Open();
             return Convert.ToInt32(cmd.ExecuteScalar());
         }
+
     }
 }

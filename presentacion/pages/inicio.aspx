@@ -56,6 +56,23 @@
             border-radius: 10px;
         }
 
+     
+
+
+        .btn-logout {
+            width: 220px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            border-radius: 0;
+            font-weight: 600;
+            background-color: white;
+        }
+
+        .btn-logout:hover {
+            background-color: #c0392b;
+            color: #fff;
+        }
+
 
         @media (max-width: 768px) {
             .main-container {
@@ -86,8 +103,9 @@
                 <asp:Button ID="btnDueno" runat="server" Text="Registrar Dueños" CssClass="btn btn-menu" OnClick="btnDueno_Click" />
                 <asp:Button ID="btnAnimal" runat="server" Text="Registrar Animal" CssClass="btn btn-menu" OnClick="btnAnimal_Click" />
                 <asp:Button ID="btnConsulta" runat="server" Text="Registrar Consulta" CssClass="btn btn-menu" OnClick="btnConsulta_Click" />
-                <asp:Button ID="btnBuscar" runat="server" Text="Buscar Consultas" CssClass="btn btn-menu" />
-                <asp:Button ID="btnReportes" runat="server" Text="Ver Reportes" CssClass="btn btn-menu" OnClick="btnReportes_Click" />
+                <asp:Button ID="btnBuscar" runat="server" Text="Buscar Consultas" CssClass="btn btn-menu" OnClick="btnBuscar_Click" />
+                <asp:Button ID="btnLogout" runat="server" Text="Cerrar Sesión" CssClass="btn btn-logout" OnClick="btnLogout_Click" />
+
             </div>
 
             <div>

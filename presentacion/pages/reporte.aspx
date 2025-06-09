@@ -113,21 +113,35 @@
 
         <!-- Resultado -->
         <asp:GridView ID="gvReporte" runat="server"
-            AutoGenerateColumns="false"
-            CssClass="table table-striped">
-            <Columns>
-                <asp:BoundField DataField="IdConsulta"    HeaderText="ID" />
-                <asp:BoundField DataField="Dueño"          HeaderText="Dueño" />
-                <asp:BoundField DataField="Mascota"        HeaderText="Mascota" />
-                <asp:BoundField DataField="FechaHora"
-                    HeaderText="Fecha y hora"
-                    DataFormatString="{0:dd/MM/yyyy HH:mm}" />
-                <asp:BoundField DataField="Descripcion"    HeaderText="Descripción" />
-                <asp:BoundField DataField="Diagnostico"    HeaderText="Diagnóstico" />
-                <asp:BoundField DataField="Tratamiento"    HeaderText="Tratamiento" />
-                <asp:BoundField DataField="Veterinario"    HeaderText="Veterinario" />
-            </Columns>
-        </asp:GridView>
+    AutoGenerateColumns="false"
+    CssClass="table table-striped"
+    OnRowCommand="gvReporte_RowCommand"
+    DataKeyNames="IdConsulta">
+  <Columns>
+    <asp:BoundField DataField="IdConsulta" HeaderText="ID" />
+    <asp:BoundField DataField="Dueño"      HeaderText="Dueño" />
+    <asp:BoundField DataField="Mascota"    HeaderText="Mascota" />
+    <asp:BoundField DataField="FechaHora"
+        HeaderText="Fecha y hora"
+        DataFormatString="{0:dd/MM/yyyy HH:mm}" />
+    <asp:BoundField DataField="Descripcion" HeaderText="Descripción" />
+    <asp:BoundField DataField="Diagnostico" HeaderText="Diagnóstico" />
+    <asp:BoundField DataField="Tratamiento" HeaderText="Tratamiento" />
+    <asp:BoundField DataField="Veterinario" HeaderText="Veterinario" />
+
+    <asp:TemplateField HeaderText="Acciones">
+      <ItemTemplate>
+        <asp:LinkButton ID="lnkComprobante"
+            runat="server"
+            CssClass="btn btn-sm btn-primary"
+            CommandName="GenerarComprobante"
+            CommandArgument='<%# Eval("IdConsulta") %>'
+            Text="Comprobante" />
+      </ItemTemplate>
+    </asp:TemplateField>
+  </Columns>
+</asp:GridView>
+
 
     </form>
 </body>

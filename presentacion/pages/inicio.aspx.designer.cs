@@ -60,12 +60,12 @@ namespace presentacion.pages
         protected global::System.Web.UI.WebControls.Button btnBuscar;
 
         /// <summary>
-        /// Control btnReportes.
+        /// Control btnLogout.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReportes;
+        protected global::System.Web.UI.WebControls.Button btnLogout;
     }
 }

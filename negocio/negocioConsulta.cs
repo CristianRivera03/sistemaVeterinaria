@@ -18,6 +18,12 @@ namespace negocio
             return _repo.Insertar(c);
         }
 
+        public DataTable ObtenerPorIdComprobante(int idConsulta)
+        {
+            return new ConsultaRepository().ObtenerPorIdComprobante(idConsulta);
+        }
+
+
         public DataTable ObtenerConsultasPorFecha(DateTime desde, DateTime hasta)
         {
             return new ConsultaRepository().ObtenerPorFecha(desde, hasta);

@@ -44,6 +44,32 @@ namespace datos
         }
 
 
+        public DataTable ObtenerPorIdComprobante(int idConsulta)
+        {
+            var dt = new DataTable();
+            const string sql = @"
+            SELECT c.IdConsulta,
+             d.Nombre   AS Dueño,
+             m.Nombre   AS Mascota,
+             c.FechaHora,
+             c.Descripcion,
+             c.Diagnostico,
+             c.Tratamiento,
+             c.Veterinario
+                FROM Consultas c
+                JOIN Duenos d   ON c.IdDueno   = d.IdDueno
+                JOIN Mascotas m ON c.IdMascota = m.IdMascota
+               WHERE c.IdConsulta = @idConsulta;
+            ";
+             var con = new SqlConnection(_conexionString);
+             var cmd = new SqlCommand(sql, con);
+            cmd.Parameters.AddWithValue("@idConsulta", idConsulta);
+             var da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            return dt;
+        }
+
+
 
 
 
